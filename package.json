@@ -1,0 +1,44 @@
+{
+	"name": "Krpano-for-vscode",
+	"displayName": "Krpano-for-vscode",
+	"description": "Krpano script support",
+	"version": "1.0.0",
+	"publisher": "LuoTengFei",
+	"icon": "images/krpano.ico",
+	"engines": {
+		"vscode": "^1.96.0"
+	},
+	"categories": [
+		"Programming Languages",
+		"Other"
+	],
+	"keywords": [
+		"krpano"
+	],
+	"main": "./dist/extension.js",
+	"contributes": {
+		"languages": [
+			{
+				"id": "krpano",
+				"extensions": [
+					".xml"
+				],
+				"firstLine": "\\<\\?krpano.*",
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "krpano",
+				"scopeName": "source.krpano",
+				"path": "./syntaxes/krpano.tmLanguage.json"
+			}
+		],
+		"snippets": [
+			{
+				"language": "krpano",
+				"path": "./snippets/krpano.json"
+			}
+		]
+	}
+}
