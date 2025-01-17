@@ -1,5 +1,5 @@
 {
-	"name": "Krpano-for-vscode",
+	"name": "krpano-for-vscode",
 	"displayName": "Krpano-for-vscode",
 	"description": "Krpano script support",
 	"version": "1.0.0",
@@ -15,7 +15,6 @@
 	"keywords": [
 		"krpano"
 	],
-	"main": "./dist/extension.js",
 	"contributes": {
 		"languages": [
 			{
